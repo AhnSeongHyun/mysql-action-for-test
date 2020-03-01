@@ -30,4 +30,4 @@ jobs:
           version: 5.7
       - name: Connect mysql
         run: |
-          python -m tests
+          pytest tests/test_conn.py
