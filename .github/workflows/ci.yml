@@ -28,6 +28,9 @@ jobs:
         uses: AhnSeongHyun/mysql-action-for-test@master
         with:
           version: 5.7
+      - name: TEST mysql
+        run: |
+          ps -ef | grep mysql
       - name: Connect mysql
         run: |
           pytest tests/test_conn.py
