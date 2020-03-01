@@ -2,4 +2,4 @@ FROM docker:stable
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
-ENTRYPOINT ["/entryf.sh"]
+ENTRYPOINT ["/entrypoint.sh"]
