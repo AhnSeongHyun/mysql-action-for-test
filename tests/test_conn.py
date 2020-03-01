@@ -4,7 +4,7 @@ import pymysql
 def test_conn():
     connection = pymysql.connect(host='localhost',
                                  port=3306,
-                                 user='user',
+                                 user='root',
                                  password='',
                                  db='',
                                  charset='utf8mb4',
