@@ -1,0 +1,18 @@
+name: 'MySQL For Testing'
+description: 'MySQL 3306 port, utf8mb4, allow empty password'
+author: 'ash84'
+branding:
+  icon: 'database'
+  color: 'blue'
+inputs:
+  version:
+    description: "mysql version"
+    required: false
+    default: 'latest'
+  mysql database:
+    description: 'database'
+    required: true
+    default: ''
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
